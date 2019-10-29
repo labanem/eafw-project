@@ -13,7 +13,7 @@
 			            <ul>
 			            	<li>Barclays Bank</li>
 			                <li>Equity Bank</li>
-			                <li>Bank of Africa</li>
+			                <li>Bank of Africa.</li>
 			            </ul>
 		            </p>
              		<br />
