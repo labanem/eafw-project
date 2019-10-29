@@ -1,0 +1,291 @@
+@charset "utf-8";
+/* eafw css */
+
+html, body {
+	padding: 0;
+	margin: 0;
+	}
+	
+body {
+	/*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	padding-top: 42px;
+	}
+
+#main {
+	margin: 2px;
+	padding: 2px;
+	}
+
+.container {
+	width: 989px;
+	margin: 0 auto;
+	}
+
+#ordSection {
+	/*width: 417px;*/
+	width: 100%;
+	padding: 2px;
+	margin: 2px;
+	/*border: solid 1px #ccc;*/
+	/*display: inline-block;*/
+}
+
+#repSection {
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 2px;
+	/*width: 550px;*/
+	width: 100%;
+	border: solid 1px #aaa;
+	/*display: inline-block;*/
+	/*vertical-align: top;*/
+}
+
+#errMessage {
+	color: #9F0A0A;
+	font-size: 10px;
+	margin: 10px 3px 3px 3px;
+	padding: 2px;
+	border-left: solid 5px #9F0A0A;
+	/*border: solid 1px #9F0A0A;*/
+	background-color: #F07474;
+}
+
+#dispOrder p {
+	margin: 0;
+	padding: 0 10px;
+	font-size: 12px;
+	border-left: solid 5px yellow;
+	background-color: #F8FF92;
+}
+
+table, th, td {
+	/*border: 1px solid black;*/
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+}
+
+#display-tables {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#display-tables td, #display-tables th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#display-tables tr:nth-child(even){background-color: #f2f2f2;}
+
+#display-tables tr:hover {background-color: #ddd;}
+
+.heading, #display-tables th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.heading {
+	padding-left: 8px;
+	width: 25%;
+}
+
+#dept-titles {
+	text-align: center;
+}
+
+/*forms */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.display-forms {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*end of forms*/
+
+.paginate-links {
+	text-align: right;
+	font-size: 40px;
+}
+
+.form-success, .form-fail {
+	padding: 5px 15px;
+	margin: 8px 0;
+}
+
+.form-success {
+	background-color: #90ee90;
+	border: 1px solid green;
+	border-left: 6px solid green;
+}
+
+.form-fail {
+	background-color: #fa8072;
+	border: 1px solid #8b0000;
+	border-left: 6px solid #8b0000;
+}
+
+/*messages*/
+
+/*end of messages*/
+
+.outstanding {
+	color: #ff0000;
+	}
+
+header, footer {
+	background-color: #CCC;
+	padding: 5px;
+	margin: 0px;
+	}
+
+header {
+	margin-left: 0px;
+	width: auto;
+	padding: 0px;
+	position: fixed;
+	z-index: 1000;
+	height: 80px;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-bottom: solid 5px green;
+}
+
+footer {
+	text-align: right;
+	color: #FFF;
+	border-radius: 5px;
+	padding-right: 5px;
+	border: solid 1px green;
+	}
+	
+header nav {
+	text-align: center;
+	/*float: right;*/
+	margin-right: 5px;
+	}
+	
+header li {
+	font-size: 15px;
+	display: inline;
+	padding: 2px;
+	}
+
+a {
+	color: green;
+	text-decoration: none !important;
+	}
+
+a:hover {
+	color: black;
+	text-decoration: none !important;
+	}
+
+a:active {
+	color: white;
+	text-decoration: none !important;
+	}
+
+li {
+	list-style: none;
+	}
+
+.orderForm label {
+	width: 50px;
+	}
+
+.orderForm input[type=text] {
+	width: 100px;
+	}
+
+.centered {
+	text-align: center;
+	}
+
+.loginForm {
+	text-align: center;
+	font-size: 13px;
+	}
+
+.loginForm3 {
+	font-size: 12px;
+	}
+	
+#loginForm2 {
+	text-align: right;
+	}
+
+/*table {
+	align: center;
+	}
+*/
+
+.firstForm input[type=submit] {
+	background-color: #CCC;
+	border-radius: 15px;
+	margin: 5px;
+	padding: 3px;
+	margin-top: 5px;
+	font-weight: bold;
+	}
+
+.firstForm label[id=MakeVisibleLbl]{
+	font-size: 12px;
+	font-weight: normal;
+	font-style: italic;
+	}
+
+.regForm label{
+	font-weight: normal;
+	
+	}
+	
+.compulsory {
+	color: #F00;
+	display: inline-block;
+	}
+
+.subcenter {
+	text-align: center;
+	}
+
+
+#results {
+	border: solid 1px;
+	width: 400px;
+	padding: 2px;
+	}
