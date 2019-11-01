@@ -11,7 +11,7 @@
 					<p>- Happy New Year 2019. Remember to switch your salary accounts to either of the 3 banks below by end of January:</p>
 		            <p>
 			            <ul>
-			            	<li>Barclays Bank</li>
+			            	<li>Barclays Bank.</li>
 			                <li>Equity Bank.</li>
 			                <li>Bank of Africa.</li>
 			            </ul>
