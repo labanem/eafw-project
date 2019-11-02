@@ -23,7 +23,7 @@ class empDetailsTb extends Model
 
    public function company()
    {
-      return $this->belongsTo('App\CompTb', 'compid');
+      return $this->belongsTo('App\compTb', 'compid');
    }
 
    //protected $guarded = ['_token'];
