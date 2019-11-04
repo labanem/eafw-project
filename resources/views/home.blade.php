@@ -8,13 +8,20 @@
 		<h3 class="heading">Notice Board</h3>
 			<div id="newNotice1">
 				<div id="newsNoticeCont">
-					<p>- Happy New Year 2019. Remember to switch your salary accounts to either of the 3 banks below by end of January:</p>
+					<p>- Welcome to the new EAFW intranet. In this we can access information such as:</p>
 		            <p>
 			            <ul>
-			            	<li>Barclays Bank..</li>
-			                <li>Equity Bank.</li>
-			                <li>Bank of Africa.</li>
+			            	<li>Company Announcements</li>
+			            	<li>Extension Numbers</li>
+			                <li>Company Emails</li>
+			                <li>Scheduled Saturday Off-days</li>
 			            </ul>
+		            </p>
+		            <p>
+		            	The same can also be edited by selected administrators in case there is any change.
+		            </p>
+		            <p>
+		            	Many more functions will be added to this system, we will keep you posted.
 		            </p>
              		<br />
 				</div>
