@@ -8,7 +8,7 @@
 		<h3 class="heading">Notice Board</h3>
 			<div id="newNotice1">
 				<div id="newsNoticeCont">
-					<p>- Welcome to the new EAFW intranet. In this we can access information such as:</p>
+					<p>- Welcome to the new eafwconnect intranet. In this we can access information such as:</p>
 		            <p>
 			            <ul>
 			            	<li>Company Announcements</li>
