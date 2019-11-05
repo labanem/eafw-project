@@ -20,7 +20,7 @@
 	</div>
 	@endif
 
-	<p class="heading">Select Employee</p>
+	<h3 class="heading">Select Employee</h3>
 
 <table id="display-tables">
 	<th>First Name</th>

@@ -15,7 +15,7 @@
 	</div>
 	@endif
 
-	<p class="heading">Edit Employee</p>	
+	<h3 class="heading">Edit Employee</h3>	
 
 <div class="display-forms">
 

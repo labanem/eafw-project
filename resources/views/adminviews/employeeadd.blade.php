@@ -20,7 +20,7 @@
 	</div>
 	@endif
 
-<p class="heading">New Employee</p>
+<h3 class="heading">New Employee</h3>
 
 <form action="{{ route('add_employee') }}" method="post">
 <div class="display-forms">
