@@ -105,3 +105,30 @@ Route::group(['prefix' => 'admin'], function(){
 	]);
 
 });
+
+Route::group(['prefix' => 'vehiclemovement'], function(){
+	Route::get('/vmvthome', [
+		'uses' => 'eafwfunctionsController@vmvthome',
+		'as' => 'vmvthome'
+	]);
+
+	Route::get('/newtrip', [
+		'uses' => 'eafwfunctionsController@newtrip',
+		'as' => 'newtrip'
+	]);
+
+	Route::get('/newtrip2', [
+		'uses' => 'eafwfunctionsController@newtrip2',
+		'as' => 'newtrip2'
+	]);
+
+	Route::post('/add_newtrip', [
+		'uses' => 'eafwfunctionsController@add_newtrip',
+		'as' => 'add_newtrip'
+	]);
+
+	Route::post('/add_newtrip2', [
+		'uses' => 'eafwfunctionsController@add_newtrip2',
+		'as' => 'add_newtrip2'
+	]);
+});

@@ -39,13 +39,6 @@
 	@endforeach
 
 	<div class="paginate-links">
-<!--@if($employees->lastPage() > 1)
-		@for($i = 1; $i <= $employees->lastPage(); $i++)
-			<a href="{{ $employees->url($i) }}">{{ $i }}</a>
-		@endfor
-	@endif
--->
-
 	@if($employees->currentPage() !== 1)
 		<a href="{{ $employees->previousPageUrl() }}"><span class="fa fa-caret-left"></span></a>
 	@endif

@@ -98,6 +98,10 @@ th, td {
 	width: 25%;
 }
 
+.heading-bkend {
+	
+}
+
 #dept-titles {
 	text-align: center;
 }
@@ -126,6 +130,11 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+form {
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 .display-forms {

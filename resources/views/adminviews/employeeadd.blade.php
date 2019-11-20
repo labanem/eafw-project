@@ -20,20 +20,20 @@
 	</div>
 	@endif
 
-<h3 class="heading">New Employee</h3>
+<h3 class="heading bk-end">New Employee</h3>
 
 <form action="{{ route('add_employee') }}" method="post">
 <div class="display-forms">
-	<label for="id">Employee Number:</label>
+	<label for="id">Employee Number:</label><br>
 	<input type="text" name="id" id="id" /><br>
 
-	<label for="fname">First Name:</label>
+	<label for="fname">First Name:</label><br>
 	<input type="text" name="fname" id="fname" /><br>
 
-	<label for="lname">Sur Name:</label>
+	<label for="lname">Sur Name:</label><br>
 	<input type="text" name="lname" id="lname" /><br>
 
-	<label for="compid">Company:</label>
+	<label for="compid">Company:</label><br>
 	<select name="compid" id="compid">
 	<option value="" selected disabled hidden>Select Company</option>
 		@foreach($companies as $company)
@@ -42,15 +42,16 @@
 	</select>
 	<br>
 
-	<label for="deptid">Department:</label>
+	<label for="deptid">Department:</label><br>
 	<select name="deptid" id="deptid">
 	<option value="" selected disabled hidden>Select Department</option>
 		@foreach($departments as $department)
 			<option value="{{ $department->id }}">{{ $department->deptname }}</option>
 		@endforeach
 	</select>
+	<br>
 
-	<label for="subdeptid">Sub Department:</label>
+	<label for="subdeptid">Sub Department:</label><br>
 	<select name="subdeptid" id="subdeptid">
 	<option value="" selected disabled hidden>Select Sub Department</option>
 	@foreach($departments as $department)
@@ -61,7 +62,7 @@
 	</select>
 	<br>
 
-	<label for="weekid">Saturday Off:</label>
+	<label for="weekid">Saturday Off:</label><br>
 	<select name="weekid" id="weekid">
 		<option value="" selected disabled hidden>Select Saturday Off</option>
 		@foreach($weekoffs as $weekoff)
@@ -72,9 +73,9 @@
 
 	<input type="submit" value="Save" />
 	<input type="hidden" value="{{ Session::token() }}" name="_token">
-
-</form>
 </div>
+</form>
+<br>
 <br>
 </section>
 

@@ -12,6 +12,7 @@
 	<p>departmentedit</p>
 	<p>subdepartmentadd</p>
 	<p>subdepartmentedit</p>
+	<p><a href="{{ route('vmvthome') }}">Vehicle Movement</a></p>
 </section>
 
 @endsection
