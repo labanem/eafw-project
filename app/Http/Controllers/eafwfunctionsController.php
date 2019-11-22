@@ -21,7 +21,8 @@ Class eafwfunctionsController extends Controller
 		$destinations = destinationTb::all();
 		$drivers = empDetailsTb::all();
 
-		$destinies = destinationTb::find(1);
+		$destinies = destinationTb::find(4);
+		$destinies = destinationTb::all();
 
 		$travelplans = travelplanTb::all();
 

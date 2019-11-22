@@ -63,15 +63,19 @@
 		<input type="hidden" value="{{ Session::token() }}" name="_token" />
 	</div>
 	</form>
-	
-	@foreach($destinies->travelplans as $travelplan)
-		@foreach($drivers as $driver)
-			@if($travelplan->drivid == $driver->id)
-				{{ $travelplan->drivid }} {{ $driver->fname }}
-			@endif
+
+	<table id="display-tables">
+	<th></th>
+	@foreach($destinies as $destiny)	
+		@foreach($destiny->travelplans as $travelplan)
+			@foreach($drivers as $driver)
+				@if($travelplan->drivid == $driver->id)
+					<tr><td>{{ $travelplan->drivid }}</td><td>{{ $driver->fname }}</td><td>{{ $driver->lname }}</td><td>{{ $travelplan->pivot->dateout }}</td></tr>
+				@endif
+			@endforeach
 		@endforeach
 	@endforeach
-	
+	</table>
 
 </div>
 <br>
