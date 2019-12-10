@@ -8,13 +8,16 @@ class travelplanTb extends Model
 {
     public function destinations()
     {
-    	return $this->belongsToMany('App\destinationTb')
-    				->withPivot('dateout', 'timeout', 'datein', 'timein', 'mileageout', 'mileagein')
-    				->withTimeStamps();
+    	return $this->belongsToMany('App\destinationTb');
     }
 
     public function drivers()
     {
-    	return $this->belongsTo('App\empDetailsTb');
+    	return $this->belongsTo('App\empDetailsTb', 'drivid');
+    }
+
+    public function cars()
+    {
+        return $this->belongsTo('App\vehicleTb', 'vehid');
     }
 }

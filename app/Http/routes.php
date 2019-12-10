@@ -131,4 +131,9 @@ Route::group(['prefix' => 'vehiclemovement'], function(){
 		'uses' => 'eafwfunctionsController@add_newtrip2',
 		'as' => 'add_newtrip2'
 	]);
+
+	Route::get('/edit_travelplan/{id}', [
+		'uses' => 'eafwfunctionsController@edit_travelplan',
+		'as' => 'edit_travelplan'
+	]);
 });

@@ -17,14 +17,20 @@ Class eafwfunctionsController extends Controller
 	public function newtrip()
 	{
 		$drivers = empDetailsTb::where('deptid', 1800)->get();
-		$vehicles = vehicleTb::all();
+		$vehicles = vehicleTb::orderBy('vehtype', 'asc')->get();
 		$destinations = destinationTb::all();
-		$drivers = empDetailsTb::all();
-
-		$destinies = destinationTb::find(4);
+		$drivers = empDetailsTb::orderBy('fname')->where('subdeptid', 1205)->get();
 		$destinies = destinationTb::all();
 
-		$travelplans = travelplanTb::all();
+		//$destinies = destinationTb::find(1)->travelplans()->get();
+		//return $destinies;
+
+		//$destinations = travelplanTb::find(30)->destinations;
+		//return $destinations;
+
+		$travelplans = travelplanTb::orderBy('id', 'desc')->get();
+		//$travelplans = travelplanTb::find(43)->destinations()->get();
+		//return $travelplans;
 
 		return view('vehiclemovement.newtrip', ['drivers' => $drivers, 'vehicles' => $vehicles, 'destinies' => $destinies, 'destinations' => $destinations, 'travelplans' => $travelplans, 'drivers' => $drivers]);
 	}
@@ -55,8 +61,17 @@ Class eafwfunctionsController extends Controller
 		return redirect()->route('newtrip')->with('success', 'New Trip Successful');
 	}
 
-	public function add_newtrip2(Request $request)
+	public function edit_travelplan($id)
 	{
+		$travelplan = travelplanTb::find($id);
 
+		$plans = destinationTb::find(1)->travelplans;
+		return $plans;
+
+		$destination = travelplanTb::find($id)->destinations;
+		//return $destination;
+
+		$drivers = empDetailsTb::orderBy('fname')->where('subdeptid', 1205)->get();
+		return view('vehiclemovement.edit_travelplan', ['travelplan' => $travelplan, 'destination' => $destination, 'drivers' => $drivers]);
 	}
 }

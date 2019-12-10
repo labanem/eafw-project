@@ -8,6 +8,8 @@ class destinationTb extends Model
 {
     public function travelplans()
     {
-    	return $this->belongsToMany('App\travelplanTb');
+    	return $this->belongsToMany('App\travelplanTb')
+    				->withPivot('dateout', 'timeout', 'datein', 'timein', 'mileageout', 'mileagein')
+    				->withTimeStamps();
     }
 }
