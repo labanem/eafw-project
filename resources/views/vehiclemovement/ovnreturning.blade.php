@@ -49,6 +49,7 @@
 		</tr>
 	@endforeach
 </table>
+
 <br>
 
 @if($travelplans->lastPage() > 1)
