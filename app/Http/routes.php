@@ -127,13 +127,28 @@ Route::group(['prefix' => 'vehiclemovement'], function(){
 		'as' => 'add_newtrip'
 	]);
 
-	Route::post('/add_newtrip2', [
-		'uses' => 'eafwfunctionsController@add_newtrip2',
-		'as' => 'add_newtrip2'
+	Route::get('/edit_newtrip/{id}', [
+		'uses' => 'eafwfunctionsController@edit_newtrip',
+		'as' => 'edit_newtrip'
 	]);
 
-	Route::get('/edit_travelplan/{id}', [
-		'uses' => 'eafwfunctionsController@edit_travelplan',
-		'as' => 'edit_travelplan'
+	Route::patch('/update_newtrip/{id}', [
+		'uses' => 'eafwfunctionsController@update_newtrip',
+		'as' => 'update_newtrip'
+	]);
+
+	Route::get('/ovnreturning', [
+		'uses' => 'eafwfunctionsController@ovnreturning',
+		'as' => 'ovnreturning'
+	]);
+
+	Route::get('/edit_ovnreturning/{id}', [
+		'uses' => 'eafwfunctionsController@edit_ovnreturning',
+		'as' => 'edit_ovnreturning'
+	]);
+
+	Route::patch('/update_ovnreturning/{id}', [
+		'uses' => 'eafwfunctionsController@update_ovnreturning',
+		'as' => 'update_ovnreturning'
 	]);
 });

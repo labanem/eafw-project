@@ -11,12 +11,12 @@ class travelplanTb extends Model
     	return $this->belongsToMany('App\destinationTb');
     }
 
-    public function drivers()
+    public function driver()
     {
     	return $this->belongsTo('App\empDetailsTb', 'drivid');
     }
 
-    public function cars()
+    public function car()
     {
         return $this->belongsTo('App\vehicleTb', 'vehid');
     }

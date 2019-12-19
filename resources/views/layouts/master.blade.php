@@ -14,19 +14,11 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script>
-		$( function() {
-		$( "#datepicker" ).datepicker({
+		$(function(){
+		$(".datepicker").datepicker({
 			dateFormat: 'yy-mm-dd'
 			});	    	
 		});
-
-		$(function() {
-		$( "#input_starttime" ).pickatime({
-			// Light or Dark theme
-			darktheme: true
-			});
-		});
-
 	</script>
 </head>
 <body>
@@ -34,6 +26,7 @@
 		@include('includes.header')
 		@yield('content')
 		@include('includes.footer')
+		@include('includes.jfooters')
 	</div>
 </body>
 </html>

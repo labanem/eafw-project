@@ -8,6 +8,11 @@ class vehicleTb extends Model
 {
    public function travelplans()
    {
-   	return $this->hasOne('App\travelplanTb');
+   	return $this->hasMany('App\travelplanTb');
+   }
+
+   public function drivers()
+   {
+   	return $this->belongsToMany('App\empDetailsTb');
    }
 }

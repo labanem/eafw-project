@@ -26,5 +26,10 @@ class empDetailsTb extends Model
       return $this->belongsTo('App\compTb', 'compid');
    }
 
+   public function vehicles()
+   {
+      return $this->belongsTo('App\vehicleTb');
+   }
+
    //protected $guarded = ['_token'];
 }
