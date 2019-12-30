@@ -87,7 +87,6 @@
 	<th>Delete</th>
 	@foreach($travelplans as $travelplan)
 		<tr>
-			<td> {{ $travelplan->id }}</td>
 			<td> {{ $travelplan->car->numberplate }} </td>
 			<td> {{ $travelplan->driver->fname }} {{ $travelplan->driver->lname }}</td>
 			<td> {{ $travelplan->dateout }} </td>
@@ -111,11 +110,22 @@
 </table>
 <br>
 
+<!--
 @if($travelplans->lastPage() > 1)
 	@for($i = 1; $i <= $travelplans->lastPage(); $i++)
 		<a href="{{ $travelplans->url($i) }}">{{ $i }}</a>
 	@endfor
 @endif
+-->
+
+<div class="paginate-links">
+	@if($travelplans->currentPage() !== 1)
+		<a href="{{ $travelplans->previousPageUrl() }}"><span class="fa fa-caret-left"></span></a>
+	@endif
+	@if($travelplans->currentPage() !== $travelplans->lastPage() && $travelplans->hasPages())
+		<a href="{{ $travelplans->nextPageUrl() }}"><span class="fa fa-caret-right"></span></a>
+	@endif
+	</div>
 <br>
 <br>
 @endsection

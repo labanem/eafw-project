@@ -9,7 +9,7 @@ $(document).ready(function() {
 });
 
 function deleteFunction() {
-	if(!confirm("Are You Sure to delete?"))
+	if(!confirm("Are You Sure to Delete?"))
 	event.preventDefault();
  }
 </script>

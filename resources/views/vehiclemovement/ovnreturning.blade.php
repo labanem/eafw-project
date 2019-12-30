@@ -45,7 +45,7 @@
 			<td> {{ $travelplan->mileageout }} </td>
 			<td> {{ $travelplan->mileagein }} </td>
 			<td> {{ $travelplan->destname }} </td>
-			<td><a href="{{ action('eafwfunctionsController@edit_ovnreturning', $travelplan['id']) }}">Return</a></td>
+			<td><a href="{{ action('eafwfunctionsController@edit_ovnreturning', $travelplan['id']) }}"><i class="fa fa-reply"></i></a></td>
 		</tr>
 	@endforeach
 </table>
