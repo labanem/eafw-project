@@ -87,6 +87,7 @@
 	<th>Delete</th>
 	@foreach($travelplans as $travelplan)
 		<tr>
+			<td> {{ $travelplan->id }}</td>
 			<td> {{ $travelplan->car->numberplate }} </td>
 			<td> {{ $travelplan->driver->fname }} {{ $travelplan->driver->lname }}</td>
 			<td> {{ $travelplan->dateout }} </td>
@@ -96,8 +97,15 @@
 			<td> {{ $travelplan->mileageout }} </td>
 			<td> {{ $travelplan->mileagein }} </td>
 			<td> {{ $travelplan->destname }} </td>
-			<td><a href="{{ action('eafwfunctionsController@edit_newtrip', $travelplan['id']) }}">Edit</a></td>
-			<td><a href="">Delete</a></td>
+			<td><a href="{{ action('eafwfunctionsController@edit_newtrip', $travelplan['id']) }}"><span class="fa fa-pencil"></span></a></td>
+			<td>
+				<form action="{{ action('eafwfunctionsController@destroy', $travelplan['id']) }}" method="POST">
+					<input type="hidden" name="_method" value="DELETE" />
+					<button class="fa fa-trash" onclick="return deleteFunction()"></button>
+					<!--<a class="btn" href="#"><i class="fa fa-trash"></i></a>-->
+					<input type="hidden" value="{{ Session::token() }}" name="_token" />
+				</form>
+			</td>
 		</tr>
 	@endforeach
 </table>

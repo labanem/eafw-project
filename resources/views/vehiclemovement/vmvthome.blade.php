@@ -4,6 +4,12 @@
 <br>
 <br>
 <h3 class="heading">Vehicle Movement</h3>
-	<p><a href="{{ route('newtrip') }}">New Trip</a></p>
-	<p><a href="{{ route('ovnreturning') }}">Overnight Returning</a></p>
+	<p>
+		<a class="btn" href="{{ route('newtrip') }}">
+	  	<i class="fa fa-pencil"></i> New Trip / Edit</a>
+  	</p>
+	<p>
+		<a class="btn" href="{{ route('ovnreturning') }}">
+	  	<i class="fa fa-reply"></i> Returning</a>
+  	</p>
 @endsection

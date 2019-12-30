@@ -151,4 +151,9 @@ Route::group(['prefix' => 'vehiclemovement'], function(){
 		'uses' => 'eafwfunctionsController@update_ovnreturning',
 		'as' => 'update_ovnreturning'
 	]);
+
+	Route::delete('/destroy/{id}', [
+		'uses' => 'eafwfunctionsController@destroy',
+		'as' => 'destroy'
+	]);
 });

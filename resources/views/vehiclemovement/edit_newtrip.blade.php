@@ -70,7 +70,7 @@
 			<input placeholder="Date in" type="text" name="datein" class="datepicker" value="{{ $travelplan->datein }}" disabled /><br>	
 			<br>
 
-			<input type="submit" value="Update" /> 
+			<input type="submit" value="Update" />
 			<input type="hidden" value="{{ Session::token() }}" name="_token">
 		</div>
 	</form>

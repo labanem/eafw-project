@@ -7,4 +7,9 @@ $(document).ready(function() {
         $('#datein').prop('disabled', !(checkval == 'returntrip'));
     });
 });
+
+function deleteFunction() {
+	if(!confirm("Are You Sure to delete?"))
+	event.preventDefault();
+ }
 </script>

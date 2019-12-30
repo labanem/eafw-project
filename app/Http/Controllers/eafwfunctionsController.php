@@ -191,4 +191,12 @@ Class eafwfunctionsController extends Controller
 		return redirect()->route('newtrip')->with('success', 'Update Successful!');
 	}
 	}
+
+	public function destroy($id) 
+	{
+		$travelplan = travelplanTb::find($id);
+		$travelplan->delete();
+
+		return redirect()->route('newtrip')->with('success', 'Trip Removed!');
+	}
 }
