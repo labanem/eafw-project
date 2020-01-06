@@ -56,7 +56,6 @@ Route::group(['middleware' => ['web']], function(){
 		'uses' => 'eafwprojectController@filterMails2',
 		'as' => 'mailsfilter2'
 		]);
-
 	});
 
 });
@@ -157,3 +156,6 @@ Route::group(['prefix' => 'vehiclemovement'], function(){
 		'as' => 'destroy'
 	]);
 });
+Route::auth();
+
+/*Route::get('/home', 'HomeController@index');*/

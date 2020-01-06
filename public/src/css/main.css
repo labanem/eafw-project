@@ -188,7 +188,7 @@ header {
 	padding: 0px;
 	position: fixed;
 	z-index: 1000;
-	height: 80px;
+	height: 90px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -204,16 +204,19 @@ footer {
 	}
 	
 header nav {
-	text-align: center;
-	/*float: right;*/
+	text-align: left;
 	margin-right: 5px;
 	}
-	
+
+
 header li {
 	font-size: 15px;
 	display: inline;
 	padding: 2px;
 	}
+
+.secondHeader {float: left;}
+.thirdHeader {float: right;}
 
 a {
 	color: green;
