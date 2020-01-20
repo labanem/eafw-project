@@ -74,6 +74,7 @@
 <br>
 
 <table id="display-tables">
+	<th>#</th>
 	<th>Car</th>
 	<th>Driver</th>
 	<th>Date Out</th>
@@ -87,6 +88,7 @@
 	<th>Delete</th>
 	@foreach($travelplans as $travelplan)
 		<tr>
+			<td> {{ $travelplan->id }}</td>
 			<td> {{ $travelplan->car->numberplate }} </td>
 			<td> {{ $travelplan->driver->fname }} {{ $travelplan->driver->lname }}</td>
 			<td> {{ $travelplan->dateout }} </td>
