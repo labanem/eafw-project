@@ -15,6 +15,7 @@
                             <li>Extension Numbers</li>
                             <li>Company Emails</li>
                             <li>Scheduled Saturday Off-days</li>
+                            <li>Employee of the Month Records</li>
                         </ul>
                     </p>
                     <p>
