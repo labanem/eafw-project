@@ -1,5 +1,5 @@
 <footer>
 	<p>
-		labanem.dev &copy 2020
+		labanem.dev &copy 2023
 	</p>
 </footer>
