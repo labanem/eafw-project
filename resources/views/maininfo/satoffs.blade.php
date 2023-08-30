@@ -35,7 +35,6 @@
 				<a href="{{ $weekoffs->url($i) }}"> WEEK {{ $i }} |</a>
 			@else
 				<a href="{{ $weekoffs->url($i) }}"> MISC </a>
-				<?php break; ?>
 			@endif
 		@endfor
 	@endif
