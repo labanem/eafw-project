@@ -15,7 +15,6 @@
                             <li>Extension Numbers</li>
                             <li>Company Emails</li>
                             <li>Scheduled Saturday Off-days</li>
-                            <li>Some Random Thing</li>
                         </ul>
                     </p>
                     <p>
